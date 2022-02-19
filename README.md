@@ -8,13 +8,15 @@ Search for videos, playlists, channels, movies. live and musics on youtube witho
 ## Install
 
 ```bash
-yarn add ytubes
+npm install git+https://github.com/OnlineDigital/ytubes.git
+# or
+yarn add git+https://github.com/OnlineDigital/ytubes.git
 ```
 
 ## Usage
 
 ```js
-import ytubes from 'ytubes'
+import ytubes from 'ytubes/dist/index.js'
 
 const videos = await ytubes.getVideo('Amor e fé', { max: 1, language: 'pt-BR' })
 ```
@@ -22,7 +24,7 @@ const videos = await ytubes.getVideo('Amor e fé', { max: 1, language: 'pt-BR' }
 ### Typescript
 
 ```ts
-import * as ytubes from 'ytubes'
+import * as ytubes from 'ytubes/dist/index.js'
 ```
 
 ## Functions
