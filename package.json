@@ -13,7 +13,7 @@
     "build": "rimraf dist/ && tsc --build",
     "lint": "eslint src/**/*.{js,ts}",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md",
-    "prepublishOnly": "npm run build"
+    "deactivate-prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^16.11.2",
@@ -30,7 +30,7 @@
     "typescript": "^4.4.4",
     "yorkie": "^2.0.0"
   },
-  "gitHooks": {
+  "deactivate-gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {

@@ -1,0 +1,13 @@
+import { Channel, ExtractData, Live, Music, Playlist, Video } from './types/data';
+import { Options, SearchOptions } from './types/shims';
+declare const Options: Options;
+declare function getVideo(query: string, options?: Options): Promise<Array<Video>>;
+declare function getPlaylist(query: string, options?: Options): Promise<Array<Playlist>>;
+declare function getChannel(query: string, options?: Options): Promise<Array<Channel>>;
+declare function getChannelLive(channelId: string, options?: Options): Promise<Array<Live>>;
+declare function getChannelPastLive(channelId: string, options?: Options): Promise<Array<Live>>;
+declare function getMovie(query: string, options?: Options): Promise<Array<Video>>;
+declare function getLive(query: string, options?: Options): Promise<Array<Live>>;
+declare function getMusic(query: string, options?: Options): Promise<Array<Music>>;
+declare function search(query: string, options: SearchOptions): Promise<Array<ExtractData>>;
+export { getVideo, getPlaylist, getChannel, getChannelLive, getChannelPastLive, getMovie, getLive, getMusic, search };

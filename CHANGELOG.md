@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/OnlineDigital/ytubes/compare/v1.2.0...v1.3.0) (2022-02-19)
+
+### Features
+
+* added getChannelLive and getChannelPastLive api methods ([valmisson/ytubes PR #1](https://github.com/valmisson/ytubes/pull/1))
+
+
+
 # [1.2.0](https://github.com/valmisson/ytubes/compare/v1.1.1...v1.2.0) (2021-10-22)
 
 
